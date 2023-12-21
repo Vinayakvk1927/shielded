@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col ">
+
+                <div class="display-5 fw-bold p-2 text-center" id="demo">Why choose our frenchise?</div>
+                <div class="lead py-3">1.Proven Track Record: With years of experience and a proven track record, our business has established itself as a reliable and trusted name in the helmet rental industry. We've perfected our operations, ensuring a seamless experience
+                    for both customers and franchisees.</div>
+                <div class="lead py-3">2.Innovative Safety Solutions: Our commitment to safety is paramount. We offer a diverse range of top-quality helmets designed to meet various safety standards across different activities and environments.</div>
+                <div class="lead py-3">3.Lucrative Market Potential: The global demand for safety gear, especially in adventure sports, cycling, motorcycling, and other activities, presents an excellent opportunity for growth and profitability.</div>
+                <div class="lead py-3">4.Comprehensive Support: As a franchisee, you'll receive comprehensive support, including initial training, operational guidelines, marketing assistance, and ongoing support to help you run your business successfully.</div>
+                <div class="lead py-3" id="lrm1"></div>
+                <div class="lead py-3" id="lrm2"></div>
+                <div class="text-center"><button class="btn btn-outline-primary" onclick="btn1()">Learn more</button></div>
+                <!-- <button class="btn btn-primary" onclick="readless()">More</button> -->
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <div class="display-6 fw-bold text-center py-3">Franchisee Benefits:</div>
+                <div class="lead py-2">1.Access to a well-established brand with a loyal customer base.</div>
+                <div class="lead py-2">2.Comprehensive training programs for smooth operations</div>
+                <div class="lead py-2">3.Marketing support and proven strategies to boost visibility.</div>
+                <div class="lead py-2">4.Procurement assistance and access to quality suppliers.</div>
+                <div class="lead py-2">5.Ongoing operational and technical support.</div>
+                <div class="btn-group">
+                    <a href="tel:9880957605" class="btn btn-success mt-3" role="button">Book an appointment</a>
+
+                    <a href="index.html" class="btn btn-warning mt-3">Home</a></div>
+            </div>
+        </div>
+
+        <!-- <div class=" text-muted text-center" id="d1"></div> -->
+    </div>
+
+
+    <!-- script -->
+    <script>
+        let i = 0;
+        let text = "5.Flexible Business Models: We offer adaptable business models tailored to suit diverse markets and locations, allowing franchisees to customize their offerings based on local demands and preferences Flexible Business Models: We offer adaptable business models tailored to suit diverse markets and locations, allowing franchisees to customize their offerings based on local demands and preferences."
+
+        function btn1() {
+            if (i < text.length) {
+                document.getElementById("lrm1").innerHTML += text.charAt(i)
+                i++;
+            }
+            setTimeout(btn1, 50)
+        }
+
+        function readless() {
+            text.remove()
+        }
+    </script>
+</body>
+
+</html>
